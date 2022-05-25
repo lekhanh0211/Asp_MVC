@@ -126,6 +126,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Help\MathHelper.cs" />
+    <Compile Include="Models\Computer.cs" />
+    <Compile Include="Models\DSComputer.cs" />
+    <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -304,10 +308,17 @@
     <Content Include="Views\Product\Index.cshtml" />
     <Content Include="Views\Shared\LayoutUser.cshtml" />
     <Content Include="Views\About\TinTuc.cshtml" />
+    <Content Include="Views\Product\ListProduct.cshtml" />
+    <Content Include="Views\Product\dsgiam.cshtml" />
+    <Content Include="Views\Product\dstang.cshtml" />
+    <Content Include="Views\Product\dstop3.cshtml" />
+    <Content Include="Views\Product\dshp.cshtml" />
+    <Content Include="Views\Product\spmoinhat.cshtml" />
+    <Content Include="Views\Product\addNew.cshtml" />
+    <Content Include="Views\Product\ListP.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

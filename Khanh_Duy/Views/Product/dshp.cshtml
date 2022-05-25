@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "dshp";
+    Layout = "~/Views/Shared/LayoutUser.cshtml";
+}
+
+<div class="container">
+    <h3 style="color:darkblue;text-align:center;padding:15px">Danh sách sản phẩm hãng HP</h3>
+    <a href="~/Product/dsgiam">Danh sách sản phẩm giảm dần</a> |
+    <a href="~/Product/dstang">Danh sách sản phẩm tăng dần</a> |
+    <a href="~/Product/dstop3">Danh sách sản phẩm top 3 theo giá</a> |
+    <a href="~/Product/dshp">Danh sách sản phẩm HP</a> |
+    <a href="~/Product/spmoinhat">2 sản phẩm mới nhất</a>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Mã sản phẩm</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá bán</th>
+                <th>Ngày sản xuất</th>
+                <th>Hãng sản xuất</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@string.Format("{0:#,0}", item.Price)</td>
+                    @* <td>@item.Price/td>*@
+                    @* <td>@item.yearMaking</td>*@
+                    <td>@string.Format("{0:dd/MM/yyyy}", item.yearMaking)</td>
+                    <td>@item.Producer</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

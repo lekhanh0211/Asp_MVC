@@ -1,4 +1,4 @@
-﻿
+﻿@model List<Khanh_Duy.Models.Student>
 @{
     ViewBag.Title = "Trang tin tức";
     Layout = "~/Views/Shared/LayoutUser.cshtml";
@@ -6,6 +6,33 @@
 }
 @section info{
     <p>Chỗ này là dùng render section này cưng</p>
-    }
+}
 <h3>Đây là trang tin tức của controller giới thiệu</h3>
+<p>Con số truyền từ controller sang view là A : </p>
 
+
+
+<h3>Danh sách sinh viên</h3>
+
+<table border="1" class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Class</td>
+                <td>@item.Status</td>
+            </tr>
+        }
+    </tbody>
+
+</table>
