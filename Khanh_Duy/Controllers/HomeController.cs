@@ -20,6 +20,5 @@ namespace Khanh_Duy.Controllers
             return View();
         }
 
-
     }
 }

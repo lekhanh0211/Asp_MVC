@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
     <!--====== Title ======-->
-    <title>eStore Template</title>
+    <title>@ViewBag.title</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -362,14 +362,14 @@
                         <nav class="main-navbar d-lg-flex justify-content-between align-items-center">
                             <!-- desktop logo Start -->
                             <div class="desktop-logo d-none d-lg-block">
-                                <a href="index.html"><img src="~/assets/images/logo.svg" alt="Logo"></a>
+                                <a href="~/"><img src="~/assets/images/logo.svg" alt="Logo"></a>
                             </div>
                             <!-- desktop logo Ends -->
                             <!-- navbar menu Start -->
                             <div class="navbar-menu">
                                 <ul class="main-menu">
                                     <li class="position-static menu-item-has-children">
-                                        <a href="#">Womans</a>
+                                        <a href="~/About/TinTuc ">Womans</a>
                                         <!-- sub mega dropdown Start -->
                                         <ul class="sub-mega-dropdown">
                                             <li>
@@ -421,11 +421,11 @@
                                         </ul>
                                         <!-- sub mega dropdown Ends -->
                                     </li>
-                                    <li><a href="category.html">mens</a></li>
-                                    <li><a href="category.html">Kids</a></li>
-                                    <li><a href="category.html">Accessories</a></li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#">Pages</a>
+                                    <li @Html.Raw(ViewBag.active == 1 ? "active" : "")><a href="~/">mens</a></li>
+                                    <li @Html.Raw(ViewBag.active == 2 ? "active" : "")><a href="~/About">Kids</a></li>
+                                    <li @Html.Raw(ViewBag.active == 4 ? "active" : "")><a href="~/About/TinTuc">Accessories</a></li>
+                                    <li class="menu-item-has-children" @Html.Raw(ViewBag.active == 3 ? "active" : "")>
+                                        <a href="~/Product">Pages</a>
                                         <!-- sub menu Start -->
                                         <ul class="sub-menu">
                                             <li><a href="about-page.html">About Page</a></li>
@@ -663,6 +663,7 @@
         </header>
     </div>
 
+    @RenderSection("info", false)
 
     @RenderBody()
 
@@ -751,6 +752,8 @@
                 <p>
                     Developed by <a href="https://graygrids.com/" rel="nofollow" target="_blank">GrayGrids</a>. Basesd on <a href="https://ecommercehtml.com/" rel="nofollow" target="_blank">eCommerceHTML</a>
                 </p>
+                @RenderSection("Producer", false)
+
             </div>
     </section>
     <!--====== Footer Style 3 Part Ends ======-->

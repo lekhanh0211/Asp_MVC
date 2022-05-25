@@ -1,5 +1,9 @@
 ﻿@{
+    //Ta có thề dùng view bag truyền 1 kiểu int , string , list danh sách
+    ViewBag.ListSv = new List<string> { "Nam", "Lan", "Minh" };
+    ViewBag.title = "Trang chủ";
     Layout = "~/Views/Shared/LayoutUser.cshtml";
+    ViewBag.active = 1;
 }
 
 
@@ -617,3 +621,13 @@
     </div>
 </section>
 <!--====== Subscribe Part Ends ======-->
+@section Producer{
+    <p>Developed by : </p>
+    @{
+        List<string> lst = (List<string>)ViewBag.ListSv;
+        for (int i = 0; i < lst.Count; i++)
+        {
+            <span style="color:red">@lst[0]</span>
+        }
+    }
+}

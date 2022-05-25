@@ -72,8 +72,8 @@ C:\Users\Duy Khanh\Desktop\EAP\Asp\Khanh_Duy\Khanh_Duy\bin\System.Web.WebPages.R
 C:\Users\Duy Khanh\Desktop\EAP\Asp\Khanh_Duy\Khanh_Duy\bin\Newtonsoft.Json.xml
 C:\Users\Duy Khanh\Desktop\EAP\Asp\Khanh_Duy\Khanh_Duy\bin\Antlr3.Runtime.pdb
 C:\Users\Duy Khanh\Desktop\EAP\Asp\Khanh_Duy\Khanh_Duy\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Duy Khanh\Desktop\EAP\Asp\Khanh_Duy\Khanh_Duy\obj\Debug\Khanh_Duy.csproj.AssemblyReference.cache
 C:\Users\Duy Khanh\Desktop\EAP\Asp\Khanh_Duy\Khanh_Duy\obj\Debug\Khanh_Duy.csproj.CoreCompileInputs.cache
 C:\Users\Duy Khanh\Desktop\EAP\Asp\Khanh_Duy\Khanh_Duy\obj\Debug\Khanh_Duy.csproj.CopyComplete
 C:\Users\Duy Khanh\Desktop\EAP\Asp\Khanh_Duy\Khanh_Duy\obj\Debug\Khanh_Duy.dll
 C:\Users\Duy Khanh\Desktop\EAP\Asp\Khanh_Duy\Khanh_Duy\obj\Debug\Khanh_Duy.pdb
+C:\Users\Duy Khanh\Desktop\EAP\Asp\Khanh_Duy\Khanh_Duy\obj\Debug\Khanh_Duy.csproj.AssemblyReference.cache

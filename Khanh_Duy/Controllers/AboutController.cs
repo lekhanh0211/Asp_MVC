@@ -13,5 +13,9 @@ namespace Khanh_Duy.Controllers
         {
             return View();
         }
+        public ActionResult TinTuc()
+        {
+            return View();
+        }
     }
 }
