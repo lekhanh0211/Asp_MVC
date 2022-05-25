@@ -18,6 +18,7 @@ namespace Khanh_Duy
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+         
         }
     }
 }

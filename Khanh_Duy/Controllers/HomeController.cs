@@ -10,21 +10,16 @@ namespace Khanh_Duy.Controllers
     {
         public ActionResult Index()
         {
+            //Chuyển dướng qua action khác cùng controller 
+            //return RedirectToAction("About");
+
+            //Chuyển hướng qua action khác khác controller
+            // return RedirectToAction("Index", "User");
+            //Chuyển hướng tới url
+            // return Redirect("https://google.com");
             return View();
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
 
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
     }
 }
