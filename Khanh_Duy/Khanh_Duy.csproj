@@ -121,6 +121,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
@@ -128,7 +129,9 @@
     </Compile>
     <Compile Include="Help\MathHelper.cs" />
     <Compile Include="Models\Computer.cs" />
+    <Compile Include="Models\DanhSachEmployee.cs" />
     <Compile Include="Models\DSComputer.cs" />
+    <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -316,6 +319,8 @@
     <Content Include="Views\Product\spmoinhat.cshtml" />
     <Content Include="Views\Product\addNew.cshtml" />
     <Content Include="Views\Product\ListP.cshtml" />
+    <Content Include="Views\Employee\Index.cshtml" />
+    <Content Include="Views\Employee\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
